@@ -1,0 +1,112 @@
+.portal-header {
+	background: url(/_i/portal-bg.jpg) no-repeat;
+	background-size: cover;
+	background-position: 50% bottom;
+	background-attachment: fixed;
+	position: relative;
+	height: 70vh;
+	.site-navigation {
+		position: relative;
+		padding: 1em 0;
+		background-color: rgba(0,77,132,0.95); /* $dark-blue */
+		@include bp(50) {
+			padding: 1em;
+		}
+		img {
+			margin-left: 1em;
+			@include bp(50) {
+				margin-left: 0;
+			}
+		}
+	}
+	.menu-icon {
+		top: 0.4em;
+		right: 0.75em;
+		@include bp(30) {
+			top: 0.2em;
+			right: 0.75em;
+		}
+	}
+}
+.portal-tagline {
+	text-align: center;
+	color: white;
+	position: absolute;
+	top: 57.5%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 85%;
+	h1 {
+		font-size: 1.4em;
+		letter-spacing: 0;
+		margin-bottom: 0.35em;
+		@include bp(30) {
+			font-size: 1.75em;
+		}
+		@include bp(62.5) {
+			font-size: 2.25em;
+		}
+	}
+	h2 {
+		margin: 0 auto 0.5em;
+	}
+	img {
+		max-width: 8em;
+		margin: 0 auto;
+		width: 100%;
+		@include bp(62.5) {
+			max-width: 10em;
+		}
+	}
+	p {
+		margin: -0.25em 0 0;
+		font-size: 0.875em;
+		font-style: italic;
+	}
+}
+.portal-navigation-tagline {
+	color: white;
+	display: block;
+	padding: 0 0 0.5em 1em;
+	@include bp(30) {
+		display: inline-block;
+	}
+	@include bp(50) {
+		padding-left: 0;
+	}
+	p {
+		margin: 0;
+		@include bp(50) {
+			margin: 1em 0;
+		}
+	}
+}
+.portal-links {
+	color: white;
+	font-size: 1em;
+	display: none;
+	text-align: center;
+	@include bp(50) {
+		display: block;
+		font-size: 0.8em;
+		float: right;
+		padding-top: 1.5em;
+		text-align: right;
+	}
+	a {
+		padding: 1em 0;
+		display: block;
+		color: white;
+		text-transform: none;
+		&:hover {
+			color: lighten($purple,25%);
+		}
+		@include bp(50) {
+			display: inline-block;
+			padding: 0 0.5em;
+		}
+		@include bp(62.5) {
+			padding: 0 1.25em;
+		}
+	}
+}

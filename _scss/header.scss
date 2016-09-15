@@ -1,0 +1,223 @@
+.site-header {
+	position: relative;
+	@include bp(50) {
+		background: url(/_i/home-background.jpg) no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+		background-position: 0 0;
+		position: relative;
+		height: 90vh;
+	}
+	@include bp(120) {
+		background-attachment: initial;
+		height: 80vh;
+	}
+	&:after {
+		content: '';
+		background: url("/_i/grey-waves.png");
+		background-size: 100%;
+		bottom: 0em;
+		background-repeat: no-repeat;
+		position: absolute;
+		left: 0;
+		right: 0;
+		height: 0;
+		padding-bottom: 12.5%;
+		margin-left: -0.1em;
+		padding-right: 0.5em;
+		width: 100%;
+	}
+}
+.mobile-header-bg {
+	display: block;
+	@include bp(50) {
+		display: none;
+	}
+}
+.site-navigation {
+	float: left;
+	position: fixed;
+	top: 0;
+	max-width: 110em;
+	padding: 1em;
+	width: 100%;
+	z-index: 11;
+	background-color: rgba(0,77,132,0.6); /* $dark-blue */
+	@include bp(50) {
+		padding: 0.7em 4em 0.85em;
+	}
+	.nav-links {
+		display: none;
+		background-color: rgba(86,137,176,0.95);
+		position: absolute;
+		top: 5.2em;
+		left: 0;
+		right: 0;
+		width: 100%;
+		text-align: center;
+		padding: 1em 0;
+		@include bp(30) {
+			width: 90%;
+			max-width: 30em;
+			margin: 0 auto;
+		}
+		@include bp(50) {
+			display: inline-block;
+			position: relative;
+			top: auto;
+			left: auto;
+			right: auto;
+			bottom: auto;
+			width: auto;
+			max-width: none;
+			text-align: left;
+			background-color: transparent;
+		}
+		a {
+			display: block;
+			padding: 0.5em 0;
+			font-size: 1em;
+			color: white;
+			&:hover {
+				color: $teal;
+			}
+			@include bp(50) {
+				display: inline-block;
+				padding: 0 0.875em;
+				font-size: 0.8em;
+			}
+		}
+	}
+	img {
+		max-width: 12em;
+		vertical-align: middle;
+		margin-right: 0;
+		@include bp(44) {
+			margin-right: 1em;
+		}
+		@include bp(62.5) {
+			margin-right: 2em;
+		}
+	}
+}
+.buy-now-btn {
+	/* button styling */
+	float: right;
+	background-color: $teal;
+	margin-top: 0.4em;
+	margin-right: 4em;
+	font-weight: 700;
+	padding: 0.35em 1.25em;
+	width: auto;
+	font-size: 1em;
+	color: white;
+	z-index: 10;
+	&:hover {
+		background-color: $purple;
+		@include bp(50) {
+			background-color: lighten($teal, 10%);
+		}
+	}
+	@include bp(50) {
+		display: block;
+		margin-right: 0;
+		background-color: $teal;
+		color: white;
+		margin-top: 0.7em;
+	}
+}
+.menu-icon {
+	display: block;
+	position: absolute;
+	right: 0.5em;
+	top: 0.3em;
+	font-size: 2em;
+	color: white;
+	&:hover {
+		color: white;
+	}
+	@include bp(50) {
+		display: none;
+	}
+}
+.site-tagline {
+	width: 90%;
+	margin: -1em auto 0;
+	padding-bottom: 6em;
+	text-align: center;
+	color: white;
+	position: relative;
+	z-index: 1;
+	@include bp(50) {
+		position: absolute;
+		top: 150px;
+		right: 0;
+		left: 0;
+		width: auto;
+		text-align: right;
+		right: 7.5%;
+		left: auto;
+		padding-bottom: 0;
+	}
+	@include bp(62.5) {
+		right: 10em;
+	}
+	h1,
+	h5 {
+		margin: 0;
+		background: rgba(109,35,110,0.65); /* $purple */
+		padding: 0.35em;
+	}
+	h1 {
+		font-size: 1.5em;
+		margin-bottom: 0;
+		@include bp(50) {
+			font-size: 1.875em;
+		}
+		@include bp(62.5) {
+			font-size: 2.25em;
+		}
+		@include bp(80) {
+			font-size: 3em;
+		}
+		span {
+			font-family: "SlabThing", sans-serif;
+		}
+	}
+	h5 {
+		font-size: 2.25em;
+		margin-bottom: 0.1em;
+		@include bp(50) {
+			margin-bottom: 0;
+			font-size: 3em;
+			float: right;
+			width: 7.35em;
+		}
+	}
+}
+.watch-vid-btn {
+	display: block;
+	margin: 0 auto;
+	background: $teal;
+	font-size: 1.25em;
+	z-index: 10;
+	width: 100%;
+	&:hover {
+		background-color: lighten($teal, 10%);
+	}
+	@include bp(50) {
+		width: auto;
+		padding: 0.25em 2em;
+		position: absolute;
+		bottom: -10em;
+		left: 0;
+		right: 0;
+		left: auto;
+		font-size: 1.5em;
+	}
+	.icon {
+		margin-right: 0.35em;
+		font-size: 1.35em;
+		margin-top: -0.15em;
+	}
+}

@@ -1,0 +1,109 @@
+/*!
+	Theme Name: WordPress Start
+	Theme URI: http://cmdtab.co
+	Author: Josh Rives
+	Author URI: http://cmdtab.co
+*/
+@import "normalize";
+@import "bits";
+@import "var";
+@font-face {
+    font-family: "slabthing";
+    src: url('_fonts/slabthing-webfont.woff2') format('woff2'),
+         url('_fonts/slabthing-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,body {
+	overflow-x:hidden;
+	-webkit-font-smoothing: antialiased;
+}
+body {
+	color: $text;
+	max-width: 110em;
+	margin: 0 auto;
+	font:
+		0.875em/1.8
+		"Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	@include bp(44) {
+		font-size: 1em;
+	}
+}
+
+a {
+	text-transform: uppercase;
+	color: $blue;
+	text-decoration: none;
+	transition: all 250ms ease-in-out;
+	&:hover {
+		color: darken($blue, 10%);
+	}
+}
+.btn {
+	@include button($blue, #fff);
+	font-weight: 700;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	line-height: 1.1;
+	margin-top: 0;
+}
+h1 {
+	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-size: 3em;
+	letter-spacing: 4px;
+}
+h2,
+h5 {
+	font-size: 2.5em;
+	font-family: "slabthing", serif;
+	font-weight: 400;
+}
+h3 {
+	font-size: 1.5em;
+}
+h4 {
+	font-size: 1.25em;
+}
+.icon {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+	vertical-align: middle;
+}
+.icon-play-circle {
+	width: 0.857421875em;
+}
+.icon-caret-right {
+	width: 0.3212890625em;
+}
+.icon-caret-down {
+	width: 0.571429718285799em;
+}
+.icon-facebook-square {
+	width: 0.8571436107158661em;
+}
+.icon-pinterest-square {
+	width: 0.8571406006813049em;
+}
+.icon-twitter-square,
+.icon-youtube-square,
+.icon-vimeo-square {
+	width: 0.8571415841579437em;
+}
+.full-section {
+	position: relative;
+}
+
+@import "icons";
+@import "modules";
+@import "header";
+@import "header-portal";
+@import "home";
+@import "portal";
+@import "footer";
+@import "carousel";
+@import "modal";
