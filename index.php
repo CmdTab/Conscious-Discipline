@@ -29,7 +29,7 @@
 		<div class="wrap group">
 			<div class="half first">
 				<a href="//www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark"  data-pin-color="red" data-pin-height="28"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_red_28.png" /></a>
-				
+
 				<img src="/_i/home-edition.jpg" alt="home edition" data-pin-description="Conscious Discipline - Home Edition Package" data-pin-media="http://cd.cmdtab.co/_i/home-edition.jpg">
 
 				<!-- <p class="caption">
@@ -198,7 +198,7 @@
 			<ul class="three-list">
 				<li>
 					<div class="fitvids video-modal">
-						<a href="#" class="video-toggle group" data-video="178956908">
+						<a href="#" class="video-toggle group" data-video="180203964">
 							<img src="_i/feeling-buddies.jpg" />
 							<?php include('_svg/icon-play.php'); ?>
 						</a>
@@ -300,7 +300,7 @@
 							<img src="/_i/kim.png" class="quote-picture" />
 						</p>
 					</div>
-					
+
 				</div>
 
 				<!-- Controls -->
